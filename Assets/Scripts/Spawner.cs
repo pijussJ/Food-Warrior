@@ -8,15 +8,22 @@ public class GameManager : MonoBehaviour
     public GameObject fruit;
     public GameObject bomb;
     public float bombChance = 20;
-    private void Start()
-    {
-        InvokeRepeating("Spawn", 0f, spawnRate);
-    }
-    void Spawn()
-    {
-        var prefab = Random.Range(0,100) < (100 - bombChance) ? fruit : bomb;
 
-        Vector3 pos = new Vector3(Random.Range(-5f, 5f), -5);
-        var obj = Instantiate(prefab, pos, Quaternion.identity);
+    public List<Wave> waves = new();
+
+    async void Start()
+    {
+        foreach (var wave in waves)
+        {
+            foreach (var item in wave.items)
+            {
+                await new WaitForSeconds(item.delay);
+                var prefab = item.isBomb ? bomb : fruit;
+                var gO = Instantiate(prefab);
+                gO.transform.position = new Vector3(item.x, -5, 0);
+                gO.GetComponent<Rigidbody2D>().velocity = item.velocity;
+            }
+            await new WaitForSeconds(3);
+        }
     }
 }

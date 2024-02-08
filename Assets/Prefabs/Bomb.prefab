@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d16bb36701ef11544b13c5299e36af44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explodeParticles: {fileID: 0}
+  explodeParticles: {fileID: 3217934726406847806, guid: 6b56b339f99e3cd46b74b000b9b02384, type: 3}
 --- !u!1 &4221882883707454090
 GameObject:
   m_ObjectHideFlags: 0
