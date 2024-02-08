@@ -340,24 +340,234 @@ MonoBehaviour:
       isBomb: 0
       x: 0
       velocity: {x: 0, y: 11}
+      isRandomPosition: 0
+      isRandomVelocity: 0
+      bombChance: 0
   - items:
     - delay: 0
       isBomb: 1
       x: 0
       velocity: {x: 0, y: 9}
+      isRandomPosition: 0
+      isRandomVelocity: 0
+      bombChance: 0
   - items:
     - delay: 0
       isBomb: 0
       x: -5
       velocity: {x: 0, y: 11}
+      isRandomPosition: 0
+      isRandomVelocity: 0
+      bombChance: 0
     - delay: 0
       isBomb: 0
       x: 0
       velocity: {x: 0, y: 11}
-    - delay: 0
+      isRandomPosition: 0
+      isRandomVelocity: 0
+      bombChance: 0
+    - delay: 0.5
       isBomb: 1
       x: 5
       velocity: {x: -5, y: 11}
+      isRandomPosition: 0
+      isRandomVelocity: 0
+      bombChance: 0
+  - items:
+    - delay: 0
+      isBomb: 1
+      x: -10
+      velocity: {x: 5, y: 11}
+      isRandomPosition: 0
+      isRandomVelocity: 0
+      bombChance: 0
+    - delay: 0
+      isBomb: 0
+      x: -2
+      velocity: {x: 0, y: 9}
+      isRandomPosition: 0
+      isRandomVelocity: 0
+      bombChance: 0
+    - delay: 0
+      isBomb: 0
+      x: 2
+      velocity: {x: 0, y: 9}
+      isRandomPosition: 0
+      isRandomVelocity: 0
+      bombChance: 0
+    - delay: 0
+      isBomb: 1
+      x: 10
+      velocity: {x: -5, y: 11}
+      isRandomPosition: 0
+      isRandomVelocity: 0
+      bombChance: 0
+  - items:
+    - delay: 0
+      isBomb: 0
+      x: 0
+      velocity: {x: 0, y: 11}
+      isRandomPosition: 0
+      isRandomVelocity: 0
+      bombChance: 0
+    - delay: 0.5
+      isBomb: 0
+      x: 0
+      velocity: {x: 0, y: 11}
+      isRandomPosition: 1
+      isRandomVelocity: 0
+      bombChance: 0
+    - delay: 0
+      isBomb: 1
+      x: 0
+      velocity: {x: 0, y: 8}
+      isRandomPosition: 1
+      isRandomVelocity: 0
+      bombChance: 0
+    - delay: 1
+      isBomb: 0
+      x: 0
+      velocity: {x: 0, y: 0}
+      isRandomPosition: 1
+      isRandomVelocity: 1
+      bombChance: 25
+    - delay: 1.5
+      isBomb: 1
+      x: 0
+      velocity: {x: 0, y: 0}
+      isRandomPosition: 1
+      isRandomVelocity: 1
+      bombChance: 0
+  - items:
+    - delay: 0
+      isBomb: 0
+      x: 0
+      velocity: {x: 0, y: 11}
+      isRandomPosition: 1
+      isRandomVelocity: 1
+      bombChance: 50
+    - delay: 0.5
+      isBomb: 0
+      x: 0
+      velocity: {x: 0, y: 11}
+      isRandomPosition: 0
+      isRandomVelocity: 0
+      bombChance: 50
+    - delay: 0.5
+      isBomb: 0
+      x: 0
+      velocity: {x: 0, y: 11}
+      isRandomPosition: 1
+      isRandomVelocity: 1
+      bombChance: 50
+    - delay: 1
+      isBomb: 0
+      x: 0
+      velocity: {x: 0, y: 11}
+      isRandomPosition: 1
+      isRandomVelocity: 1
+      bombChance: 50
+    - delay: 2
+      isBomb: 1
+      x: 0
+      velocity: {x: 0, y: 11}
+      isRandomPosition: 1
+      isRandomVelocity: 1
+      bombChance: 50
+  - items:
+    - delay: 0
+      isBomb: 1
+      x: -5
+      velocity: {x: 0, y: 11}
+      isRandomPosition: 0
+      isRandomVelocity: 0
+      bombChance: 0
+    - delay: 0
+      isBomb: 1
+      x: 0
+      velocity: {x: 0, y: 11}
+      isRandomPosition: 0
+      isRandomVelocity: 0
+      bombChance: 0
+    - delay: 0.5
+      isBomb: 1
+      x: 5
+      velocity: {x: -5, y: 11}
+      isRandomPosition: 1
+      isRandomVelocity: 1
+      bombChance: 0
+  - items:
+    - delay: 0.5
+      isBomb: 1
+      x: 0
+      velocity: {x: 0, y: 0}
+      isRandomPosition: 1
+      isRandomVelocity: 1
+      bombChance: 0
+    - delay: 0.5
+      isBomb: 0
+      x: 0
+      velocity: {x: 0, y: 0}
+      isRandomPosition: 0
+      isRandomVelocity: 0
+      bombChance: 10
+    - delay: 0.5
+      isBomb: 0
+      x: -7
+      velocity: {x: 0, y: 9}
+      isRandomPosition: 0
+      isRandomVelocity: 0
+      bombChance: 20
+    - delay: 0.5
+      isBomb: 0
+      x: 7
+      velocity: {x: 0, y: 11}
+      isRandomPosition: 0
+      isRandomVelocity: 0
+      bombChance: 30
+    - delay: 0.5
+      isBomb: 0
+      x: 0
+      velocity: {x: 0, y: 0}
+      isRandomPosition: 1
+      isRandomVelocity: 1
+      bombChance: 50
+    - delay: 1
+      isBomb: 1
+      x: 0
+      velocity: {x: 0, y: 0}
+      isRandomPosition: 1
+      isRandomVelocity: 1
+      bombChance: 0
+  - items:
+    - delay: 0
+      isBomb: 0
+      x: -7
+      velocity: {x: 0, y: 8}
+      isRandomPosition: 0
+      isRandomVelocity: 0
+      bombChance: 0
+    - delay: 0
+      isBomb: 1
+      x: 8
+      velocity: {x: 0, y: 11}
+      isRandomPosition: 0
+      isRandomVelocity: 0
+      bombChance: 0
+    - delay: 0
+      isBomb: 0
+      x: 0
+      velocity: {x: 0, y: 0}
+      isRandomPosition: 1
+      isRandomVelocity: 1
+      bombChance: 60
+    - delay: 0
+      isBomb: 1
+      x: 0
+      velocity: {x: 0, y: 0}
+      isRandomPosition: 1
+      isRandomVelocity: 1
+      bombChance: 0
 --- !u!4 &625331265
 Transform:
   m_ObjectHideFlags: 0

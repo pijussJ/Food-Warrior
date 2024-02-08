@@ -12,7 +12,7 @@ public class SpawnItemData
     public Vector2 velocity = new Vector2(0, 10f);
     public bool isRandomPosition;
     public bool isRandomVelocity;
-    public bool isRandomBomb;
+    public float bombChance;
 
 }
 
