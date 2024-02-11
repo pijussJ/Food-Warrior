@@ -116,6 +116,7 @@ MonoBehaviour:
   juiceColor: {r: 0, g: 1, b: 0.030314207, a: 1}
   spawnSound: {fileID: 8300000, guid: 66d60676357b075419ae6f1a7457807e, type: 3}
   sliceSound: {fileID: 8300000, guid: faf32607316e4cc4d8c944f12416772f, type: 3}
+  missSound: {fileID: 8300000, guid: 874471c6eda1eed4aa259e2cfc435011, type: 3}
 --- !u!1001 &189370748993034299
 PrefabInstance:
   m_ObjectHideFlags: 0

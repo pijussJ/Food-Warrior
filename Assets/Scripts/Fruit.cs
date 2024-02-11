@@ -11,6 +11,7 @@ public class Fruit : MonoBehaviour
     public Color juiceColor;
     public AudioClip spawnSound;
     public AudioClip sliceSound;
+    public AudioClip missSound;
 
     void Start()
     {
@@ -23,6 +24,7 @@ public class Fruit : MonoBehaviour
         if (transform.position.y < -6)
         {
             Miss();
+            AudioSystem.Play(missSound);
         }
     }
     void Miss()
@@ -35,7 +37,6 @@ public class Fruit : MonoBehaviour
     {
         var particles = Instantiate(explodeParticles);
         particles.transform.position = transform.position;
-
         Destroy(gameObject);
         if (!CompareTag("Bomb")) Split(particles);
         AudioSystem.Play(sliceSound);
