@@ -8,12 +8,15 @@ public class Fruit : MonoBehaviour
     Rigidbody2D rb;
     public GameObject leftSide;
     public GameObject rightSide;
-
+    public Color juiceColor;
+    public AudioClip spawnSound;
+    public AudioClip sliceSound;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.angularVelocity = 250;
+        AudioSystem.Play(spawnSound);
     }
     private void Update()
     {
@@ -33,14 +36,21 @@ public class Fruit : MonoBehaviour
         var particles = Instantiate(explodeParticles);
         particles.transform.position = transform.position;
 
+        Destroy(gameObject);
+        if (!CompareTag("Bomb")) Split(particles);
+        AudioSystem.Play(sliceSound);
+    }
+    void Split(GameObject particles)
+    {
         // seperate children 
         transform.DetachChildren();
         var leftrb = leftSide.AddComponent<Rigidbody2D>();
         var rightrb = rightSide.AddComponent<Rigidbody2D>();
 
         leftrb.velocity = rb.velocity + new Vector2(-2, 0);
-        rightrb.velocity = rb.velocity + new Vector2(2,0) ;
+        rightrb.velocity = rb.velocity + new Vector2(2, 0);
 
-        Destroy(gameObject);
+        particles.GetComponent<ParticleSystem>().startColor = juiceColor;
+        particles.transform.GetChild(0).GetComponent<ParticleSystem>().startColor = juiceColor;
     }
 }

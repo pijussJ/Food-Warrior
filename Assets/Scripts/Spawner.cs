@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public float spawnRate = 1;
-    public GameObject fruit;
+    public List<GameObject> fruits;
     public GameObject bomb;
     public float bombChance = 20;
 
@@ -17,8 +17,9 @@ public class GameManager : MonoBehaviour
         {
             foreach (var item in wave.items)
             {
+                var randomFruit = fruits[Random.Range(0, fruits.Count)];
                 await new WaitForSeconds(item.delay);
-                var prefab = item.isBomb ? bomb : fruit;
+                var prefab = item.isBomb ? bomb : randomFruit;
                 if (item.bombChance > Random.Range(1, 100)) prefab = bomb;
 
                 var gO = Instantiate(prefab);
